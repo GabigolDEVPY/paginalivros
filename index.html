@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendação de Livros de Programação</title>
+    <!-- Conexão com o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho da Página -->
+    <header>
+        <div class="header-content">
+            <h1>Explore o Mundo da Programação</h1>
+            <p>Descubra os melhores livros para começar sua jornada como programador, de acordo com seus objetivos.</p>
+            <button class="btn-start" onclick="scrollToSection()">Começar Agora</button>
+        </div>
+    </header>
+
+    <!-- Seção Principal -->
+    <section id="main-section" class="container">
+        <h2>Recomendações de Livros de Programação</h2>
+        <p>Escolha seu objetivo e veja os livros recomendados para iniciantes:</p>
+
+        <select id="objetivo">
+            <option value="">Selecione seu objetivo</option>
+            <option value="web">Desenvolvimento Web</option>
+            <option value="python">Aprender Python</option>
+            <option value="algoritmos">Algoritmos e Lógica</option>
+            <option value="mobile">Desenvolvimento Mobile</option>
+        </select>
+
+        <button onclick="pesquisarLivros()">Pesquisar Livros</button>
+
+        <div id="resultado" class="result"></div>
+    </section>
+
+    <!-- Conexão com o arquivo JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
